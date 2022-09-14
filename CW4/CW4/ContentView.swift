@@ -42,7 +42,7 @@ struct ContentView: View {
                         .font(.title)}
               
                 Button ( action: {
-                    myGrocery.append(.randomElement())
+                myGrocery.append(myGrocery.randomElement() ?? "nothin")
                     
                                 })
               { Image(systemName: "questionmark.circle.fill")}
